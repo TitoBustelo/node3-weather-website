@@ -66,6 +66,7 @@ app.get('/weather', (req, res) => {
                 location,
                 //Location is carried over from geocode()
                 address: req.query.adress
+                //Address is coming from req.query.adress
             })
         })
 

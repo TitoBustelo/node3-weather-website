@@ -9,7 +9,7 @@ const forecast = (latitude, longitude, callback) => {
         } else if (response.error) {
             callback('Unable to find location', undefined)
         } else {``
-            callback(undefined, `${response.current.weather_descriptions[0]}. The temperature is ${response.current.temperature} degress.`)
+            callback(undefined, `${response.current.weather_descriptions[0]}. The temperature is ${response.current.temperature} degress. The wind speed its ${response.current.wind_speed}`)
 
             //location, response.current.weather_descriptions[0], response.current.temperature
         }
